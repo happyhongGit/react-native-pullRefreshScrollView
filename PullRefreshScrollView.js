@@ -136,7 +136,7 @@ export default class PullRefreshScrollView extends Component {
 
       if (contentSize.height - layoutMeasurement.height - y < 40) {
 
-        // 触发外部的滚动加载方法
+        // 触发外部的滚动加载方法 zheyang
         if (this.props.onLoadMore && this.lastContentHeight != contentSize.height) {
           this.lastContentHeight = contentSize.height;
           this.props.onLoadMore(this);
